@@ -1,0 +1,10 @@
+{
+    "prettier.jsxBracketSameLine": true,
+    "editor.formatOnSave": true,
+    "editor.hover.enabled": false,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+
+}
