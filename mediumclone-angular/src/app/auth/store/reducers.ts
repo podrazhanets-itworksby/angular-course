@@ -1,5 +1,10 @@
 import { Action, createReducer, on } from '@ngrx/store';
 import {
+  loginAction,
+  loginFailureAction,
+  loginSuccessAction,
+} from 'src/app/auth/store/actions/login.action';
+import {
   registerAction,
   registerFailureAction,
   registerSuccessAction,
@@ -34,6 +39,31 @@ const authReducer = createReducer(
   ),
   on(
     registerFailureAction,
+    (state, action): AuthStateInterface => ({
+      ...state,
+      isSubmitting: false,
+      validationErrors: action.errors,
+    })
+  ),
+  on(
+    loginAction,
+    (state): AuthStateInterface => ({
+      ...state,
+      isSubmitting: false,
+      validationErrors: null,
+    })
+  ),
+  on(
+    loginSuccessAction,
+    (state, action): AuthStateInterface => ({
+      ...state,
+      isSubmitting: false,
+      currentUser: action.currentUser,
+      isLoggedIn: true,
+    })
+  ),
+  on(
+    loginFailureAction,
     (state, action): AuthStateInterface => ({
       ...state,
       isSubmitting: false,
