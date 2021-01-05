@@ -8,7 +8,7 @@ import { AppComponent } from 'src/app/app.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
-import { TopBarModule } from 'src/app/shared/modules/topBar/top-bar.module';
+import { TopBarModule } from 'src/app/shared/modules/top-bar/top-bar.module';
 import { PersistenceService } from 'src/app/shared/services/persistance.servise';
 import { AuthInterceptor } from 'src/app/shared/services/auth-interceptor.servise';
 

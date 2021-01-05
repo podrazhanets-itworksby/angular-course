@@ -12,7 +12,7 @@ import { GetCurrentUserEffect } from 'src/app/auth/store/effects/get-current-use
 import { LoginEffect } from 'src/app/auth/store/effects/login.effect';
 import { RegisterEffect } from 'src/app/auth/store/effects/register.effect';
 import { reducer } from 'src/app/auth/store/reducers';
-import { BackendErrorMessagesModule } from 'src/app/shared/modules/bacendErrorMessages/backend-error-messages.module';
+import { BackendErrorMessagesModule } from 'src/app/shared/modules/bacend-error-messages/backend-error-messages.module';
 import { PersistenceService } from 'src/app/shared/services/persistance.servise';
 
 const routes: Routes = [
