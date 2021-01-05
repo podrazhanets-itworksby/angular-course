@@ -7,8 +7,8 @@ import {
   isSubmittingSelector,
   validationErrorsSelector,
 } from 'src/app/auth/store/selectors';
-import { LoginRequestInterface } from 'src/app/auth/types/loginRequest.interface';
-import { BackendErrorsInterface } from 'src/app/shared/types/backendErrors.interface';
+import { LoginRequestInterface } from 'src/app/auth/types/login-request.interface';
+import { BackendErrorsInterface } from 'src/app/shared/types/backend-errors.interface';
 
 @Component({
   selector: 'mc-login',

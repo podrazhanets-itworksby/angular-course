@@ -12,7 +12,7 @@ import {
   registerSuccessAction,
 } from 'src/app/auth/store/actions/register.action';
 import { PersistenceService } from 'src/app/shared/services/persistance.servise';
-import { CurrentUserInterface } from 'src/app/shared/types/currentUser.interface';
+import { CurrentUserInterface } from 'src/app/shared/types/current-user.interface';
 @Injectable()
 export class RegisterEffect {
   register$ = createEffect(() =>
