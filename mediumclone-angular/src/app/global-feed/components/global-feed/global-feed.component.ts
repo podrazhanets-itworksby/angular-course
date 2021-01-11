@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-global-feed',
+  selector: 'mc-global-feed',
   templateUrl: './global-feed.component.html',
-  styleUrls: ['./global-feed.component.scss']
+  styleUrls: ['./global-feed.component.scss'],
 })
 export class GlobalFeedComponent implements OnInit {
+  apiUrl: string = '/articles';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
