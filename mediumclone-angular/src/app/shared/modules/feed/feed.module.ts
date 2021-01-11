@@ -9,6 +9,7 @@ import { GetFeedEffect } from 'src/app/shared/modules/feed/store/effects/get-fee
 import { redusers } from 'src/app/shared/modules/feed/store/reducers';
 import { LoadingModule } from 'src/app/shared/modules/loading/loading.module';
 import { PaginationModule } from 'src/app/shared/modules/pagination/pagination.module';
+import { TagListModule } from 'src/app/shared/modules/tag-list/tag-list.module';
 import { FeedComponent } from './components/feed/feed.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FeedComponent } from './components/feed/feed.component';
     ErrorMessageModule,
     LoadingModule,
     PaginationModule,
+    TagListModule,
   ],
   declarations: [FeedComponent],
   exports: [FeedComponent],

@@ -3,7 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { parseUrl, stringify } from 'query-string';
 import { Observable, Subscription } from 'rxjs';
-import { getFeedAction } from 'src/app/shared/modules/feed/store/actions/get-feet.action';
+import { getFeedAction } from 'src/app/shared/modules/feed/store/actions/get-feed.action';
 import {
   errorSelector,
   feedSelector,

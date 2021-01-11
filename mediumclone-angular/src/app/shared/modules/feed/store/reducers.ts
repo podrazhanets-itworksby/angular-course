@@ -4,7 +4,7 @@ import {
   getFeedAction,
   getFeedFailureAction,
   getFeedSuccessAction,
-} from 'src/app/shared/modules/feed/store/actions/get-feet.action';
+} from 'src/app/shared/modules/feed/store/actions/get-feed.action';
 import { FeedStateInterface } from 'src/app/shared/modules/feed/types/feed-state.interface';
 
 const initialState: FeedStateInterface = {

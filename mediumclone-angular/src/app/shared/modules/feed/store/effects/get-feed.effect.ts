@@ -7,7 +7,7 @@ import {
   getFeedAction,
   getFeedFailureAction,
   getFeedSuccessAction,
-} from 'src/app/shared/modules/feed/store/actions/get-feet.action';
+} from 'src/app/shared/modules/feed/store/actions/get-feed.action';
 import { GetFeedResponceInterface } from 'src/app/shared/modules/feed/types/get-feed-response.interface';
 
 @Injectable()
