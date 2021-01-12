@@ -8,10 +8,12 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { AppComponent } from 'src/app/app.component';
 import { AuthModule } from 'src/app/auth/auth.module';
+import { TagFeedModule } from 'src/app/global-feed copy/tag-feed.module';
 import { GlobalFeedModule } from 'src/app/global-feed/global-feed.module';
 import { TopBarModule } from 'src/app/shared/modules/top-bar/top-bar.module';
 import { AuthInterceptor } from 'src/app/shared/services/auth-interceptor.servise';
 import { PersistenceService } from 'src/app/shared/services/persistance.servise';
+import { YourFeedModule } from 'src/app/your-feed/your-feed.module';
 import { environment } from 'src/environments/environment';
 
 @NgModule({
@@ -30,6 +32,8 @@ import { environment } from 'src/environments/environment';
     TopBarModule,
     GlobalFeedModule,
     StoreRouterConnectingModule.forRoot(),
+    YourFeedModule,
+    TagFeedModule,
   ],
   providers: [
     PersistenceService,
